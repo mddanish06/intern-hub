@@ -25,7 +25,7 @@ function Register() {
       };
       axios
         .post(
-          "https://internshipbackend-vwja.onrender.com/api/admin/adminLogin",
+          "https://backend-internhub.onrender.com/api/admin/adminLogin",
           bodyjson
         )
         .then((res) => {

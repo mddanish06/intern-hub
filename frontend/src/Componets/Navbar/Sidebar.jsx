@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../Assets/logo.png";
 import "./sidebar.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -44,7 +43,7 @@ function Sidebar() {
     <>
       <div className="App2 -mt-2 overflow-hidden">
         <Link to="/">
-          <img src={logo} alt="" id="nav2-img" />{" "}
+        <h1 className="py-3 pl-4 text-cyan-600">InternHub</h1>
         </Link>
         <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
           <span className="cursor-pointer close-btn" onClick={closeSidebar}>
