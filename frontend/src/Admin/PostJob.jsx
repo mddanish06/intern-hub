@@ -49,7 +49,7 @@ function PostJOb() {
         AdditionalInfo: additionalInfo,
       };
       axios
-        .post("https://backend-internhub.onrender.com/api/job", bodyJosn)
+        .post("https://internshipbackend-vwja.onrender.com/api/job", bodyJosn)
         .then((res) => {
           console.log(res.data);
         })

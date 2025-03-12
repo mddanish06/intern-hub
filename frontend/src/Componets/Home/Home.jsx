@@ -19,7 +19,7 @@ function Home() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://backend-internhub.onrender.com/api/internship`
+          `https://internshipbackend-vwja.onrender.com/api/internship`
         );
         setInternshipData(response.data);
       } catch (error) {
@@ -253,7 +253,8 @@ function Home() {
         <div className="log flex">
           <button
             id="buttons"
-            className="flex items-center  bg-white h-9 justify-center mt-4 text-white rounded-lg shadow-md hover:bg-gray-100" onClick={loginFunction}
+            className="flex items-center  bg-white h-9 justify-center mt-4 text-white rounded-lg shadow-md hover:bg-gray-100"
+            onClick={loginFunction}
           >
             <div className="px-4 py-3">
               <svg className="h-6 w-6" viewBox="0 0 40 40">

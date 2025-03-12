@@ -50,7 +50,7 @@ function Postinternships() {
       };
       axios
         .post(
-          "https://backend-internhub.onrender.com/api/internship",
+          "https://internshipbackend-vwja.onrender.com/api/internship",
           bodyJosn
         )
         .then((res) => {

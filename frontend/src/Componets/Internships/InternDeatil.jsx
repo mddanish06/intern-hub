@@ -26,7 +26,7 @@ function InternDeatil() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        `https://backend-internhub.onrender.com/api/internship/${id}`
+        `https://internshipbackend-vwja.onrender.com/api/internship/${id}`
       );
       setData(response.data);
 
@@ -52,7 +52,7 @@ function InternDeatil() {
 
       await axios
         .post(
-          "https://backend-internhub.onrender.com/api/application",
+          "https://internshipbackend-vwja.onrender.com/api/application",
           bodyJson
         )
         .then((res) => {})

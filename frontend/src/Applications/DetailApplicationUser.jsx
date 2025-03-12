@@ -9,7 +9,7 @@ function DeatilApplication() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        `https://backend-internhub.onrender.com/api/application/${id}`
+        `https://internshipbackend-vwja.onrender.com/api/application/${id}`
       );
 
       setData([response.data]);
@@ -37,9 +37,7 @@ function DeatilApplication() {
                   {data.company}
                 </h1>
                 <h2>Cover Letter</h2>
-                <p className="leading-relaxed font-bold">
-                  {data.coverLetter}
-                </p>
+                <p className="leading-relaxed font-bold">{data.coverLetter}</p>
                 <div className="flex mt-6  pb-5 border-b-2 border-gray-100 mb-5">
                   <span className="mr-3">Application Date</span>
                   <br />

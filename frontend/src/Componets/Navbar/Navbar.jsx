@@ -22,7 +22,7 @@ function Navbar() {
       };
       axios
         .post(
-          "https://backend-internhub.onrender.com/api/admin/adminLogin",
+          "https://internshipbackend-vwja.onrender.com/api/admin/adminLogin",
           bodyjson
         )
         .then((res) => {
@@ -154,7 +154,7 @@ function Navbar() {
             <>
               <div className="auth">
                 <button className="btn1" onClick={showLogin}>
-                <Link to="/">Login</Link>
+                  <Link to="/">Login</Link>
                 </button>
 
                 <button className="btn2">
@@ -367,7 +367,10 @@ function Navbar() {
                     </div>
                     <div className="mt-4">
                       <div className="flex justify-between">
-                        <label htmlFor="pass" className="block text-gray-700 text-sm font-bold mb-2">
+                        <label
+                          htmlFor="pass"
+                          className="block text-gray-700 text-sm font-bold mb-2"
+                        >
                           Password
                         </label>
                         <a href="/" className="text-xs text-blue-500">
@@ -377,14 +380,18 @@ function Navbar() {
                       <input
                         className=" text-gray-700 focus:outline-none focus:shadow-outline border border-gray-300 rounded py-2 px-4 block w-full appearance-none"
                         placeholder="Must be atleast 6 characters"
-                        type="pass" id="pass"
+                        type="pass"
+                        id="pass"
                         name="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                       />
                     </div>
                     <div className="mt-8">
-                      <button className="btn3  bg-blue-500 h-9 text-white font-bold py-2 px-4 w-full rounded hover:bg-blue-600 " onClick={LoginAdmin}>
+                      <button
+                        className="btn3  bg-blue-500 h-9 text-white font-bold py-2 px-4 w-full rounded hover:bg-blue-600 "
+                        onClick={LoginAdmin}
+                      >
                         Login
                       </button>
                     </div>

@@ -9,7 +9,7 @@ function ViewAllApplication() {
     const fetchApplication = async () => {
       try {
         const response = await axios.get(
-          "https://backend-internhub.onrender.com/api/application"
+          "https://internshipbackend-vwja.onrender.com/api/application"
         );
         setApplication(response.data);
       } catch (error) {
